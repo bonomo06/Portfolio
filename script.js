@@ -66,3 +66,60 @@ function type() {
 }
 
 type();
+document.addEventListener('DOMContentLoaded', () => {
+    const header2 = document.getElementById('header2')
+        if (window.innerWidth <769) {
+            header2.innerHTML = 
+            `<a id="dropdownButton" class="drobtn">=</a>
+        `
+
+        const dropdownButton = document.getElementById('dropdownButton')
+        let menuCreated = false
+
+
+        dropdownButton.addEventListener('click', () => {
+            if (!menuCreated) {
+            let menu = 
+            
+            `<div class="dropdown-content" id="dropdownContent">
+                <nav id=dropdownNav>
+                    <a id=closeMenu>X</a>
+                    <a href="#">Opção 1</a>
+                    <a href="#">Opção 2</a>
+                    <a href="#">Opção 3</a>
+                    <a href="#">Opção 3</a>
+                    <a href="#">Opção 3</a>
+                </nav>
+            </div>`
+            header2.insertAdjacentHTML('beforeend', menu);
+            menuCreated = true
+
+            const cloneMenu = document.getElementById('closeMenu')
+            closeMenu.addEventListener('click', () => {
+                document.getElementById('dropdownContent').remove();
+                menuCreated = false;
+            });
+            }
+        })
+        }
+
+        menu()
+
+        window.addEventListener('click', function (event) {
+            const dropdownContent = document.getElementById('dropdownContent')
+            if (dropdownContent && !header2.contains(event.target)) {
+                dropdownContent.remove();
+                menuCreated = false;
+            }
+        })
+
+});
+
+
+
+
+{/* <div class="dropdown-content" id="dropdownContent">
+                <a href="#">Opção 1</a>
+                <a href="#">Opção 2</a>
+                <a href="#">Opção 3</a>
+            </div> */}
