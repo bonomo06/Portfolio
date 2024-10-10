@@ -164,3 +164,120 @@ a {
                 0 0 12px #fff,
                 0 0 15px #1AFBE5;
 }
+
+
+
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .home {
+        display: grid;
+        grid-template-columns: 1fr;
+        color: #fff;
+    }
+    #home1 {
+        margin-top: 20%;
+        margin-left: 5%;
+    }
+    #home1 a img {
+        padding: 0.2rem;
+        border-radius: 50%;
+        border: 1px solid #1AFBE5;
+        margin: 1%;
+        transition: all 0.5s ease-in-out;
+    }
+    #home1 a img:hover {
+        transform: scale(1.1);
+        background-color: #1AFBE5;
+        box-shadow: 0 0 2px #1AFBE5,
+                    0 0 4px #1AFBE5, 
+                    0 0 6px #1AFBE5, 
+                    0 0 10px #1AFBE5, 
+                    0 0 15px #1AFBE5, 
+                    0 0 20px #1AFBE5;
+    }
+    #home2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15%;
+    }
+    #home2 img {
+        width: 50%;
+        height: 100%;
+        border-radius: 50%;
+        transition: all 0.5s ease-in-out;
+    }
+    #home2 img:hover {
+        transform: scale(1.1);
+        background-color: #1AFBE5;
+        box-shadow: 0 0 2px #1AFBE5,
+                    0 0 4px #1AFBE5, 
+                    0 0 6px #1AFBE5, 
+                    0 0 10px #1AFBE5, 
+                    0 0 15px #1AFBE5, 
+                    0 0 20px #1AFBE5;
+    }
+    #h2Especi {
+        margin-top: 10%;
+        text-align: center;
+    }
+    .especialidades {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 3%;
+        max-width: 100%;
+    }
+    .card {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin: 2%;
+        transition: all 0.2s ease-in-out;
+        border-radius: 10px;
+    }
+    .card:hover {
+        box-shadow: 0 0 2px #1AFBE5,
+                    0 0 6px #fff,
+                    0 0 8px#1AFBE5,
+                    0 0 12px #fff,
+                    0 0 15px #1AFBE5;
+    } 
+    #sobremim {
+        margin-top: 10%;
+        text-align: center;
+    }
+    .sobre {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 2%;
+    }
+    .sobre img {
+        width: 50%;
+        height: 100%;
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+    }
+    #primeiroSobre {
+        text-align: center;
+    }
+    #segundoSobre a img{
+        width: 16px;
+        height: 16px;
+        padding: 1%;
+        vertical-align: middle;
+    }
+    #segundoSobre a {
+        padding: 2%;
+        background-color: #05b7b7;
+        transition: all 0.3s ease-in-out;
+    }
+    #segundoSobre a:hover {
+        box-shadow: 0 0 2px #1AFBE5,
+                    0 0 6px #fff,
+                    0 0 8px#1AFBE5,
+                    0 0 12px #fff,
+                    0 0 15px #1AFBE5;
+    }
+}
