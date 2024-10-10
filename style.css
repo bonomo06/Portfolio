@@ -1,0 +1,166 @@
+body {
+    color: #fff;
+    background-color: #000;
+    font-family: 'Roboto Mono', sans-serif;
+    max-width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    padding: 1rem;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.header2 a {
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+.header2 a:hover {
+    transform:translate(0, -5px);
+    text-decoration: underline #1AFBE5;
+    text-decoration-thickness: 2px;
+    color: #1AFBE5;
+    text-shadow: 0 0 2px #05b7b7,
+                 0 0 4px #05b7b7, 
+                 0 0 6px #05b7b7;
+}
+.blue {
+    color: #1AFBE5;
+}
+#bonomo {
+    text-shadow: 0 0 2px #05b7b7,
+                 0 0 4px #05b7b7, 
+                 0 0 6px #05b7b7, 
+                 0 0 10px #05b7b7, 
+                 0 0 15px #05b7b7, 
+                 0 0 20px #05b7b7;
+}
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #fff;
+}
+#home1 {
+    margin-top: 20%;
+    margin-left: 5%;
+}
+#cursor {
+    display: inline-block;
+    width: 1px;
+    background-color: #fff;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50.01%, 100% {
+        opacity: 0;
+    }
+}
+#home1 a img {
+    padding: 0.2rem;
+    border-radius: 50%;
+    border: 1px solid #1AFBE5;
+    margin: 1%;
+    transition: all 0.5s ease-in-out;
+}
+#home1 a img:hover {
+    transform: scale(1.1);
+    background-color: #1AFBE5;
+    box-shadow: 0 0 2px #1AFBE5,
+                 0 0 4px #1AFBE5, 
+                 0 0 6px #1AFBE5, 
+                 0 0 10px #1AFBE5, 
+                 0 0 15px #1AFBE5, 
+                 0 0 20px #1AFBE5;
+}
+#home2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+}
+#home2 img {
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+#home2 img:hover {
+    transform: scale(1.1);
+    background-color: #1AFBE5;
+    box-shadow: 0 0 2px #1AFBE5,
+                 0 0 4px #1AFBE5, 
+                 0 0 6px #1AFBE5, 
+                 0 0 10px #1AFBE5, 
+                 0 0 15px #1AFBE5, 
+                 0 0 20px #1AFBE5;
+}
+#h2Especi {
+    margin-top: 10%;
+    text-align: center;
+}
+.especialidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3%;
+    max-width: 100%;
+}
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 2%;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+}
+.card:hover {
+    box-shadow: 0 0 2px #1AFBE5,
+                0 0 6px #fff,
+                0 0 8px#1AFBE5,
+                0 0 12px #fff,
+                0 0 15px #1AFBE5;
+}
+#sobremim {
+    margin-top: 10%;
+    text-align: center;
+}
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2%;
+}
+.sobre img {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+#primeiroSobre {
+    text-align: center;
+}
+#segundoSobre a img{
+    width: 16px;
+    height: 16px;
+    padding: 1%;
+    vertical-align: middle;
+}
+#segundoSobre a {
+    padding: 2%;
+    background-color: #05b7b7;
+    transition: all 0.3s ease-in-out;
+}
+#segundoSobre a:hover {
+    box-shadow: 0 0 2px #1AFBE5,
+                0 0 6px #fff,
+                0 0 8px#1AFBE5,
+                0 0 12px #fff,
+                0 0 15px #1AFBE5;
+}
