@@ -6,7 +6,7 @@ import SectionTitle from '@/components/ui/SectionTitle';
 import { Mail, Github, Linkedin, ArrowUpRight, Send } from 'lucide-react';
 
 export default function Contact() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const contacts = [
     {
@@ -91,7 +91,7 @@ export default function Contact() {
           <div className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-gradient-to-r from-primary-500/10 to-accent-500/10 dark:from-primary-500/20 dark:to-accent-500/20 border border-primary-500/30">
             <Send className="w-5 h-5 text-primary-500" />
             <span className="text-dark-700 dark:text-dark-200 font-medium">
-              {t.language === 'pt-BR' 
+              {language === 'pt-BR' 
                 ? 'Respondo em até 24 horas!' 
                 : 'I reply within 24 hours!'}
             </span>

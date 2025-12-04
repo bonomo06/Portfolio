@@ -6,27 +6,27 @@ import SectionTitle from '@/components/ui/SectionTitle';
 import { User, Target, Lightbulb } from 'lucide-react';
 
 export default function About() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const highlights = [
     {
       icon: <User className="w-6 h-6" />,
       title: 'Full Stack',
-      description: t.language === 'pt-BR' 
+      description: language === 'pt-BR' 
         ? 'Desenvolvimento completo, do backend ao frontend'
         : 'Complete development, from backend to frontend',
     },
     {
       icon: <Target className="w-6 h-6" />,
-      title: t.language === 'pt-BR' ? 'Focado em Resultados' : 'Results Focused',
-      description: t.language === 'pt-BR'
+      title: language === 'pt-BR' ? 'Focado em Resultados' : 'Results Focused',
+      description: language === 'pt-BR'
         ? 'Soluções que geram valor real'
         : 'Solutions that generate real value',
     },
     {
       icon: <Lightbulb className="w-6 h-6" />,
-      title: t.language === 'pt-BR' ? 'Inovação' : 'Innovation',
-      description: t.language === 'pt-BR'
+      title: language === 'pt-BR' ? 'Inovação' : 'Innovation',
+      description: language === 'pt-BR'
         ? 'IA e automação para otimizar processos'
         : 'AI and automation to optimize processes',
     },

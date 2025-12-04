@@ -6,7 +6,7 @@ import SectionTitle from '@/components/ui/SectionTitle';
 import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 
 export default function Education() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <section id="education" className="py-24 relative">
@@ -60,7 +60,7 @@ export default function Education() {
                 {/* Decorative Progress Bar */}
                 <div className="mt-4">
                   <div className="flex justify-between text-xs text-dark-500 dark:text-dark-400 mb-2">
-                    <span>{t.language === 'pt-BR' ? 'Progresso do curso' : 'Course progress'}</span>
+                    <span>{language === 'pt-BR' ? 'Progresso do curso' : 'Course progress'}</span>
                     <span>66%</span>
                   </div>
                   <div className="h-2 bg-dark-100 dark:bg-dark-800 rounded-full overflow-hidden">
