@@ -61,12 +61,12 @@ export default function Education() {
                 <div className="mt-4">
                   <div className="flex justify-between text-xs text-dark-500 dark:text-dark-400 mb-2">
                     <span>{language === 'pt-BR' ? 'Progresso do curso' : 'Course progress'}</span>
-                    <span>66%</span>
+                    <span>83%</span>
                   </div>
                   <div className="h-2 bg-dark-100 dark:bg-dark-800 rounded-full overflow-hidden">
                     <motion.div
                       initial={{ width: 0 }}
-                      whileInView={{ width: '66%' }}
+                      whileInView={{ width: '83%' }}
                       viewport={{ once: true }}
                       transition={{ duration: 1, delay: 0.5 }}
                       className="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full"

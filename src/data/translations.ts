@@ -42,16 +42,27 @@ Combino conhecimento técnico sólido com visão estratégica, sempre focado em 
       subtitle: 'Minha jornada acadêmica',
       degree: 'Desenvolvimento de Software Multiplataforma',
       institution: 'Fatec Indaiatuba',
-      period: '4º Semestre',
+      period: '5º Semestre',
       status: 'Em andamento',
     },
     experience: {
       title: 'Experiência',
       subtitle: 'Minha trajetória profissional',
       current: 'Atual',
-      role: 'Estagiário em Automação com IA',
-      company: 'IAHUB',
-      description: 'Desenvolvimento de soluções de automação utilizando inteligência artificial, criando fluxos inteligentes e integrações que otimizam processos empresariais.',
+      jobs: [
+        {
+          role: 'Analista de IA',
+          company: 'MakeVendas',
+          description: 'Desenvolvimento de soluções de automação utilizando inteligência artificial, criando fluxos inteligentes e integrações que otimizam processos de vendas.',
+          tech: ['n8n', 'IA', 'Automação', 'APIs'],
+        },
+        {
+          role: 'Estagiário Full Stack',
+          company: 'IAHUB',
+          description: 'Desenvolvimento full stack de aplicações web, criando APIs robustas, frontends modernos e soluções de automação com inteligência artificial.',
+          tech: ['React', 'Node.js', 'APIs', 'n8n', 'IA', 'Automação'],
+        },
+      ],
     },
     projects: {
       title: 'Projetos',
@@ -176,16 +187,27 @@ I combine solid technical knowledge with strategic vision, always focused on del
       subtitle: 'My academic journey',
       degree: 'Multiplatform Software Development',
       institution: 'Fatec Indaiatuba',
-      period: '4th Semester',
+      period: '5th Semester',
       status: 'In progress',
     },
     experience: {
       title: 'Experience',
       subtitle: 'My professional journey',
       current: 'Current',
-      role: 'AI Automation Intern',
-      company: 'IAHUB',
-      description: 'Development of automation solutions using artificial intelligence, creating intelligent flows and integrations that optimize business processes.',
+      jobs: [
+        {
+          role: 'AI Analyst',
+          company: 'MakeVendas',
+          description: 'Development of automation solutions using artificial intelligence, creating intelligent flows and integrations that optimize sales processes.',
+          tech: ['n8n', 'AI', 'Automation', 'APIs'],
+        },
+        {
+          role: 'Full Stack Intern',
+          company: 'IAHUB',
+          description: 'Full stack development of web applications, building robust APIs, modern frontends and automation solutions with artificial intelligence.',
+          tech: ['React', 'Node.js', 'APIs', 'n8n', 'AI', 'Automation'],
+        },
+      ],
     },
     projects: {
       title: 'Projects',
